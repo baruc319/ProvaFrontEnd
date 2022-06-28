@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUTOS</title>
+</head>
+<body>
+    <p align = 'right'>
+        <a href="{{ url_for('carrinho') }}">VERIFICAR CARRINHO</a>
+    </p>
+<center>
+
+    <div>
+        <h1>PRODUTOS</h1>
+    </div>
+
+    <hr>
+
+    <div>
+        <p><b>
+            BANANA - 3,00 R$
+        </b></p>
+    </div>
+    <div>        
+        <img src="{{ url_for('static', filename='banana.jpg') }}" />
+    </div>
+
+    <button value='adicionar'>
+        Adicionar ao carrinho
+    </button>
+
+    <hr>
+    
+    <div>
+        <p><b>
+            MAÇÃ - 7,00 R$
+        </b></p>
+    </div>
+    
+    <div>        
+        <img src="{{ url_for('static', filename='maca.jpg') }}" />
+    </div>
+    
+    <button value='adicionar'>
+        Adicionar ao carrinho
+    </button>
+
+    <hr>
+    
+    <div>
+        <p><b>
+            PERA 4,00 R$
+        </b></p>
+    </div>
+    
+    <div>        
+        <img src="{{ url_for('static', filename='pera.jpg') }}" />
+    </div>
+    
+    <button value='adicionar'>
+        Adicionar ao carrinho
+    </button>    
+    
+</center>
+
+</body>
+</html>
